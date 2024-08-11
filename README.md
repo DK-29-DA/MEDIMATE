@@ -11,7 +11,7 @@ Resolved performance issues related to direct symptom entry on the webpage, ensu
 Integrated detailed disease information, including descriptions, precautions, medications, dietary advice, and workout tips, providing users with comprehensive health insights.
 
 **Technologies Used:**
-Python, Flask, Scikit-learn
+Python, Flask, Scikit-learn,
 HTML, CSS, JavaScript
 
 **Key Achievements:**
