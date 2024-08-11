@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <style>
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            color: black;
+            margin-top: 0;
+            margin-left: 2px;
+        }
+
+        .myimg {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Logo at the top-left corner -->
+            <div class="logo">
+                <img class="myimg" src="{{ url_for('static', filename='img2.jpg') }}" alt="">
+            </div>
+
+            <a class="navbar-brand" href="/predict">&nbsp;&nbsp;MEDIMATE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/predict"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact"><b>Contact</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/blog"><b>Blog</b></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar End-->
+    <div style="background:#ddffe7">
+
+<br><br>
+    <div class="container my-4 mt-4">
+
+        <h2 class="text-center">Building a Symptom-Based Disease Diagnosis Web App with Flask and Machine Learning</h2>
+<p>In today's digital era, access to reliable and timely healthcare information is more crucial than ever. With the growing need for remote healthcare solutions, we embarked on an exciting journey to develop a symptom-based disease diagnosis web application. Using Flask for the backend and a Support Vector Classifier (SVC) model, we created a user-friendly platform that empowers users to identify potential illnesses based on their reported symptoms.</p>
+
+<h3>The Problem</h3>
+<p>Our project began with the realization that many individuals experience symptoms and seek immediate answers to their health concerns. However, distinguishing between various diseases can be challenging, especially when symptoms overlap. Our objective was to create a convenient solution where users can input their symptoms and receive potential diagnoses, helping them navigate their health more effectively.</p>
+
+<h3>The Solution</h3>
+<p>We designed and developed a web app that allows users to enter a list of symptoms they are experiencing. The app then utilizes a pre-trained Support Vector Classifier (SVC) model to predict the most likely disease based on the input symptoms. Here's how our solution works:</p>
+
+<ol>
+    <li><b>Symptom Input:</b> Users input their symptoms through a straightforward and user-friendly interface. The web app supports a broad range of symptoms, making it adaptable to various scenarios.</li>
+    <li><b>Machine Learning Model:</b> We trained a Support Vector Classifier (SVC) using a dataset that includes symptoms and corresponding diseases. This model is capable of predicting diseases based on the symptoms provided by users.</li>
+    <li><b>Prediction:</b> The app processes the symptoms through the model and predicts the most likely disease, delivering instant information about potential health concerns to the user.</li>
+    <li><b>Additional Information:</b> To enhance user experience, the app also provides detailed information about the predicted disease. This includes descriptions, recommended precautions, medications, dietary advice, and workout tips.</li>
+</ol>
+
+<h3>Key Features</h3>
+<ul type="circle">
+    <li><b>User-Friendly Interface:</b> Our web app features an intuitive and easy-to-navigate interface, ensuring that users can enter their symptoms effortlessly.</li>
+    <li><b>Accurate Predictions:</b> Leveraging machine learning, our model delivers precise disease predictions based on the symptoms provided by the user.</li>
+    <li><b>Comprehensive Information:</b> In addition to predictions, the app offers comprehensive information about the predicted disease, including descriptions, precautions, medications, diet recommendations, and workout tips.</li>
+    <li><b>Educational Content:</b> To empower users with knowledge, the app includes informative blog posts covering various health topics.</li>
+</ul>
+
+<br>
+
+<h3>Conclusion</h3>
+<p>Our Symptom-Based Disease Diagnosis Web App brings together the power of machine learning and healthcare information, placing it at the fingertips of users. It serves as a valuable resource for individuals seeking to quickly and conveniently understand their health conditions. By merging technology with healthcare, we aim to make healthcare more accessible and user-centric.</p>
+
+<p>As remote healthcare solutions become increasingly important, this project represents a significant step forward in providing accessible and reliable healthcare information to a wider audience. We hope that our web app will contribute to greater health awareness and, ultimately, improve the well-being of individuals worldwide.</p>
+<br><br>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</div>
+</body>
+
+</html>
