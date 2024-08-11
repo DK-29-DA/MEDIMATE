@@ -9,8 +9,8 @@ Implemented a Support Vector Classifier model to predict potential health condit
 Designed and optimized a user-friendly interface for seamless symptom input and real-time predictions, enhancing user experience and application reliability.
 Resolved performance issues related to direct symptom entry on the webpage, ensuring smooth functionality and reliable operation.
 Integrated detailed disease information, including descriptions, precautions, medications, dietary advice, and workout tips, providing users with comprehensive health insights.
-Technologies Used:
 
+**Technologies Used:**
 Python, Flask, Scikit-learn
 HTML, CSS, JavaScript
 
